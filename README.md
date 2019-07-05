@@ -1,6 +1,12 @@
 # DictionariesAndSets
 Exercises on dictionaries and sets for my apprenticeship - https://corndel.atlassian.net/wiki/spaces/AC/pages/78184452/4+-+Dictionaries+and+Sets
 
+This week covers dictionaries and sets.
+
+# Dictionaries
+
+In Javascript there aren't any dictionaries but you can use Objects and Maps to make key:value pairs. In Objects keys must be strings, but in Maps keys can be anything.
+
 
 Making Bloom Filters : http://codekata.com/kata/kata05-bloom-filters/
 More info on Bloom Filters: https://www.jasondavies.com/bloomfilter/
