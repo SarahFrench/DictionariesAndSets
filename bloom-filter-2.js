@@ -1,3 +1,6 @@
+// This is also wrong because javascript is adding properties to the array with a key that's a string of parsed integer from the hexadecimal hash of the word. Again, due to how in JS arrays are objects.
+
+
 const crypto = require('crypto'); // Using built in Node module for hash functions
 
 
