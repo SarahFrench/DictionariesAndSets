@@ -34,3 +34,5 @@ let bloomFilter = makeBloomFilter(dictionary);
 
 console.log("Trying to find 'hello' in Bloom filter:");
 console.log(searchBloomFilter ('hello', bloomFilter));
+console.log("Trying to find 'goodbye' in Bloom filter:");
+console.log(searchBloomFilter ('goodbye', bloomFilter));
