@@ -30,15 +30,15 @@ function searchBloomFilter (word, filter){
   let fingerprint = indicesInBinaryArray(word);
   let anyZeros = false;
   fingerprint.forEach( index => {
-    if (filter[index] == undefined){
+    if (filter[index] != 1){
       anyZeros = true;
-      console.log("Found a zero!");
+      // console.log("Found a zero!");
     }
   })
   if (anyZeros) {
-    console.log("Word in list!");
+    console.log("Word not in list");
   } else {
-    console.log("Word is not in list");
+    console.log("Word is in list");
   }
 }
 
@@ -46,4 +46,5 @@ function searchBloomFilter (word, filter){
 dictionary = ["hello", "world", "i", "love", "algorithms"]
 let bloomFilter = makeBloomFilter(dictionary);
 console.log(bloomFilter);
-searchBloomFilter("i", bloomFilter )
+searchBloomFilter("hello", bloomFilter )
+searchBloomFilter("lolz", bloomFilter )
