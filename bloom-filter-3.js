@@ -36,15 +36,16 @@ function searchBloomFilter (word, filter){
     }
   })
   if (anyZeros) {
-    console.log("Word not in list");
+    return "Word not in list";
   } else {
-    console.log("Word is in list");
+    return "Word is in list";
   }
 }
 
 //My dictionary's contents
 dictionary = ["hello", "world", "i", "love", "algorithms"]
 let bloomFilter = makeBloomFilter(dictionary);
-console.log(bloomFilter);
-searchBloomFilter("hello", bloomFilter )
-searchBloomFilter("lolz", bloomFilter )
+console.log("hello : " + searchBloomFilter("hello", bloomFilter ))
+console.log("hi : " + searchBloomFilter("hi", bloomFilter ))
+console.log("world : " + searchBloomFilter("world", bloomFilter ))
+console.log("lolz : " + searchBloomFilter("lolz", bloomFilter ))
